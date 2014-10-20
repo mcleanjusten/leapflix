@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+
+  "name": "Leapflix",
+  "description": "This extension demonstrates an 'Alert' on any Netflix page.",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.netflix.com/*"],
+      "js": [ "leap-0.6.3.js","myscript.js" ],
+      "run_at": "document_end"
+    }
+	]
+}
